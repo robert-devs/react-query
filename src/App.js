@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+// import { useQuery } from 'react-query'
+// import axios from 'axios'
+import Post from './components/Post'
 
 function App() {
+  // const { isLoading, error, data } = useQuery('Dogs', () =>
+    // axios('https://random.dog/woof.json'),
+  // )
+  // if (error) return <h3>Error :{error.message},try again</h3>
+  // if (isLoading) return <h3>Loading</h3>
+  // console.log(data)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <img src={data.data.url} alt="dogs" /> */}
+      <Post/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
